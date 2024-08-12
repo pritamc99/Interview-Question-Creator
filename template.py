@@ -17,10 +17,6 @@ list_of_files = [
     "app.py"
 ]
 
-
-
-
-
 for filepath in list_of_files:
     filepath = Path(filepath)
     filedir, filename = os.path.split(filepath)
@@ -32,3 +28,6 @@ for filepath in list_of_files:
     if (not os.path.exists(filename)) or (os.path.getsize(filename) == 0):
         with open(filepath, "w") as f:
             pass
+            logging.info(f"Creating empty file : {filepath}")
+    else:
+        logging.info(f"File {filepath} already exists.")
