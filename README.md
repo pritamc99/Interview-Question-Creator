@@ -14,6 +14,13 @@ conda create -n interview python=3.10 -y
 
 ```bash
 conda activate interview
-
 ```
+
+3. Install requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+
 
